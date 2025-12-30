@@ -23,13 +23,14 @@ export default function LoginPage() {
   const onSubmit = (data: LoginFormValues) => {
     if (data.email) {
       login(data.email);
-      router.push("/");
     }
   };
 
   useEffect(() => {
-    console.log(isLoggedIn);
-  }, [isLoggedIn]);
+    if (isLoggedIn) {
+      router.replace("/");
+    }
+  }, [isLoggedIn, router]);
 
   return (
     <div className="flex items-center justify-center min-h-screen">
