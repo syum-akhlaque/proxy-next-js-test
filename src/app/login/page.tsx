@@ -38,7 +38,7 @@ export default function LoginPage() {
           <CardTitle>
             Login to your account
             <p className="mt-3 text-sm font-light text-yellow-500">
-              Is logged in:{isLoggedIn ? "true" : "false"}{" "}
+              Is logged in check:{isLoggedIn ? "true" : "false"}{" "}
             </p>
           </CardTitle>
         </CardHeader>
